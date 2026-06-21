@@ -1,0 +1,1 @@
+key = f"{url}_{width}_{height}"
