@@ -17,6 +17,7 @@ services:
         condition: service_started
     environment: 
       - "REDIS_URL=redis://cache:6379"
+    env_file: .env
 
 volumes:
   cache:
