@@ -18,5 +18,4 @@ async def screenshot_response(url: str, width: int, height: int, commons: Annota
         save_screenshot(key, screen_bytes)
         return Response(content=screen_bytes, media_type="image/png")    
     else:
-        return Response(content=key_controle, media_type="image/png")    
-
+        return Response(content=key_controle, media_type="image/png")
