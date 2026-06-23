@@ -10,5 +10,4 @@ def get_screenshot(key):
 
 
 def save_screenshot(key, data):
-    r.setex(key, settings.CACHE_TTL, data) #key is TTL en value is data (screenshot bytes)
-    
+    r.set(key, data, ex=settings.CACHE_TTL) #key is TTL en value is data (screenshot bytes)
