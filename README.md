@@ -39,12 +39,18 @@ Voeg ook je API key toe als header:
 X-API-Key: jouw-sleutel
 ```
 
-Voorbeeld:
+Voorbeeld (Mac/Linux):
 
 ```bash
 curl "http://localhost:8000/screenshots?url=https://thomasmore.be/en&width=1280&height=720" \
   -H "X-API-Key: jouw-sleutel" \
   --output screenshot.png
+```
+
+Op Windows gebruik je `curl.exe` in plaats van `curl` (PowerShell heeft een eigen `curl` die anders werkt):
+
+```bash
+curl.exe "http://localhost:8000/screenshots?url=https://thomasmore.be/en&width=1280&height=720" -H "X-API-Key: jouw-sleutel" --output screenshot.png
 ```
 
 ## API testen via de browser
